@@ -1,0 +1,29 @@
+/* --------- normalize --------- */
+
+@import "_misc/normalize";
+
+/* --------- mixins --------- */
+
+@import "_misc/mixins";
+
+/* --------- adjustment --------- */
+
+/*@import "_misc/adjustment";*/
+
+/* --------- SECTIONS --------- */
+
+@import "_sections/header";
+
+body{
+	background-color: #ccc;
+}
+p {
+	font-size: 24px;
+}
+
+
+
+
+
+
+
