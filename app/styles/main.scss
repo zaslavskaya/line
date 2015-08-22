@@ -8,22 +8,87 @@
 
 /* --------- adjustment --------- */
 
+@import "_misc/fonts";
+
 /*@import "_misc/adjustment";*/
+
 
 /* --------- SECTIONS --------- */
 
 @import "_sections/header";
-
-body{
-	background-color: #ccc;
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;   
+} 
+ 
+.clearfix:after {
+    clear: both; 
 }
-p {
-	font-size: 24px;
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    background-color: #ccc;
+}  
+
+
+.title {
+	margin: 0px;
+}
+
+.wrapper {
+    min-width: 960px;
 }
 
 
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+ 
+.main {
+	background-image: url('/images/bg/bg1.jpg');
+	background-size: cover;
+	min-height: 600px;
+	padding: 30px 0px;
+}
 
+.main p {
+	margin: 0;
+}
 
+.info__list {
+	width: 520px;
+	margin: 0px;
+	color: #fff;
+	float: left;
+}
 
+.action {
+	width: 380px;
+	min-height: 280px;
+	color: #fff;
+	float: right;
+}
+.statistic {
+	display: inline-block;
 
+}
+.statistic__circle-wrap {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border: 3px solid #ccc;
+	border-radius: 50%;
+}
+
+.statistic__numbers {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	color: #fff;
+}

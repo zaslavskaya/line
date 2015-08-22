@@ -1,4 +1,61 @@
 .header {
+	padding-top: 5px;
+    background: #171e24;
+}
 
+.header__logo {
+    display: inline-block;
+    float: left;
+}
+
+.logo_hidden-text {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.navigation {
+    display: block;
+    float: left;
+       padding-top: 24px;
+    padding-left: 44px;
+}
+
+.navigation__list {
+    display: block;
+    margin: 0;
+    max-width: 650px;
+
+}
+
+.navigation__item {
+    float: left;
+    font-size: 12px;
+    padding-right: 10px;
+    font-family: 'open_sanslight', arial;
+}
+
+.navigation__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation__link:hover,
+.navigation__link_active {
+    border-bottom: 2px #0070ba solid;
+}
+
+.callback {
+    display: block;
+    float: right;
+}
+
+.number {
+    margin: 0;
+    text-align: center;
+    font-family: 'open_sansbold', arial;
+    font-size: 20px;
+    color: #fff;
 }
 

@@ -21,10 +21,29 @@ html
 
         .wrapper
             .maincontent
-                include _common/header.jade
+                include _common/header.jade 
+                section.main
+                    div.container.clearfix
+                        ul.info__list
+                            h2.title.info__title Распространение бесплатных изданий и возвратных тиражей в Санкт-Петербурге
+                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
+                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
+                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
+                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения.
+                        div.action
+                            h2.title.action__title акция
+                            p.action__text Закажите 2 месяца распространения и получите 3-й месяц в подарок!
+                            button.button.action__button Заказать
+                        ul.statistic
+                            li.statistic__item 
+                                div.statistic__circle-wrap
+                                    div.statistic__numbers 222
+                                p.statistic__name
 
-                block content
-                    p.lol testing it onlystest
+
+                
+
+
 
         include _common/footer.jade
 
