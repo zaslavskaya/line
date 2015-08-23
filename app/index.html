@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="/styles/css/main.css" media="screen, projection, print">
     <link rel="stylesheet" type="text/css" href="/scripts/_vendor/bxslider/bx_styles/bx_styles.css">
+    <link rel="stylesheet" type="text/css" href="/scripts/_vendor/fullpage.js/jquery.fullPage.css">
     <script src="/scripts/_vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
@@ -22,70 +23,74 @@
 <p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
 <![endif]-->
     <div class="wrapper">
-      <div class="maincontent">
-        <header class="header">
-          <div class="container clearfix">
-            <a href="#" class="header__logo"><img alt="oline" src="/images/content/logo.png" class="logo"><span class="logo_hidden-text">Олайн. Маркетинговые решения</span></a>
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">Распространение  изданий</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Реклама в бизнес -центрах</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Дизайн и полиграфия</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Реклама на парнасе</a></li>
+      <div id="fullpage" class="maincontent">
+        <div class="section">
+          <header class="header">
+            <div class="container clearfix">
+              <a href="#" class="header__logo"><img alt="oline" src="/images/content/logo.png" class="logo"><span class="logo_hidden-text">Олайн. Маркетинговые решения</span></a>
+              <nav class="navigation">
+                <ul class="navigation__list">
+                  <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">Распространение  изданий</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">Реклама в бизнес -центрах</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">Дизайн и полиграфия</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">Реклама на парнасе</a></li>
+                </ul>
+              </nav>
+              <div class="callback">
+                <p class="number">+7 (812) 974-27-08</p>
+                <button class="button callback__button">Заказать звонок</button>
+              </div>
+            </div>
+          </header>
+          <!--главный экран-->
+          <section class="main">
+            <div class="container clearfix">
+              <ul class="info__list">
+                <h2 class="title info__title">Распространение бесплатных изданий и возвратных тиражей в Санкт-Петербурге</h2>
+                <li class="info__item">Предоставляем эффективный, экономичный и надежный канал распространения. </li>
+                <li class="info__item">Адресная программа распространения с широким охватом и качественная логистика. </li>
+                <li class="info__item">Возьмем на себя весь объем работ по распространению - от типографии до читателя. </li>
+                <li class="info__item">Включимся в Вашу систему распространения, взаимодействуем с дистрибьюторами и ТК.</li>
               </ul>
-            </nav>
-            <div class="callback">
-              <p class="number">+7 (812) 974-27-08</p>
-              <button class="button callback__button">Заказать звонок</button>
+              <div class="action">
+                <h2 class="title action__title">акция</h2>
+                <p class="action__text">Закажите 2 месяца распространения и получите 3-й месяц <span class="action__text_span">B подарок!</span></p>
+                <button class="button action__button">Заказать распространение</button>
+              </div>
+              <ul class="statistic">
+                <li class="statistic__item">
+                  <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/sx2.png" class="statistic__icons">
+                    <div class="statistic__numbers">45000m2 <span class="statistic__numbers-span">площади</span></div>
+                  </div>
+                  <p class="statistic__name">занятой людьми, которые видят Ваше издание каждый день</p>
+                </li>
+                <li class="statistic__item">
+                  <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/peoples.png" class="statistic__icons">
+                    <div class="statistic__numbers"> 30 000 <span class="statistic__numbers-span">человек</span></div>
+                  </div>
+                  <p class="statistic__name">проходимость наших точек в день</p>
+                </li>
+                <li class="statistic__item">
+                  <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/book.png" class="statistic__icons">
+                    <div class="statistic__numbers"> 4000<span class="statistic__numbers-span">экземпляров</span></div>
+                  </div>
+                  <p class="statistic__name">которые мы можем гарантированно распространить за месяц</p>
+                </li>
+                <li class="statistic__item">
+                  <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/location.png" class="statistic__icons">
+                    <div class="statistic__numbers"> 75<span class="statistic__numbers-span">мест</span></div>
+                  </div>
+                  <p class="statistic__name">в 10 районах Санкт-Петербурга</p>
+                </li>
+              </ul>
             </div>
-          </div>
-        </header>
-        <section class="main">
-          <div class="container clearfix">
-            <ul class="info__list">
-              <h2 class="title info__title">Распространение бесплатных изданий и возвратных тиражей в Санкт-Петербурге</h2>
-              <li class="info__item">Предоставляем эффективный, экономичный и надежный канал распространения. </li>
-              <li class="info__item">Адресная программа распространения с широким охватом и качественная логистика. </li>
-              <li class="info__item">Возьмем на себя весь объем работ по распространению - от типографии до читателя. </li>
-              <li class="info__item">Включимся в Вашу систему распространения, взаимодействуем с дистрибьюторами и ТК.</li>
-            </ul>
-            <div class="action">
-              <h2 class="title action__title">акция</h2>
-              <p class="action__text">Закажите 2 месяца распространения и получите 3-й месяц <span class="action__text_span">B подарок!</span></p>
-              <button class="button action__button">Заказать распространение</button>
-            </div>
-            <ul class="statistic">
-              <li class="statistic__item">
-                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/sx2.png" class="statistic__icons">
-                  <div class="statistic__numbers">45000m2 <span class="statistic__numbers-span">площади</span></div>
-                </div>
-                <p class="statistic__name">занятой людьми, которые видят Ваше издание каждый день</p>
-              </li>
-              <li class="statistic__item">
-                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/peoples.png" class="statistic__icons">
-                  <div class="statistic__numbers"> 30 000 <span class="statistic__numbers-span">человек</span></div>
-                </div>
-                <p class="statistic__name">проходимость наших точек в день</p>
-              </li>
-              <li class="statistic__item">
-                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/book.png" class="statistic__icons">
-                  <div class="statistic__numbers"> 4000<span class="statistic__numbers-span">экземпляров</span></div>
-                </div>
-                <p class="statistic__name">которые мы можем гарантированно распространить за месяц</p>
-              </li>
-              <li class="statistic__item">
-                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/location.png" class="statistic__icons">
-                  <div class="statistic__numbers"> 75<span class="statistic__numbers-span">мест</span></div>
-                </div>
-                <p class="statistic__name">в 10 районах Санкт-Петербурга</p>
-              </li>
-            </ul>
-          </div>
-          <footer class="footer-main local-footer">
-            <p class="footer-text">распространим всё до последнего экземпляра!</p>
-          </footer>
-        </section>
-        <section class="distribution">
+            <footer class="footer-main local-footer">
+              <p class="footer-text">распространим всё до последнего экземпляра!</p>
+            </footer>
+          </section>
+        </div>
+        <!-- экран 2-->
+        <section class="distribution section">
           <div class="container clearfix">
             <div class="distribution-top">
               <h3 class="title3 distribution__title">Наша система распространения</h3>
@@ -115,6 +120,162 @@
             </div>
           </footer>
         </section>
+        <!--экран 3-->
+        <section class="description section">
+          <div class="container clearfix">
+            <h3 class="title3 description__title">Распространение у нас лучше всего подходит</h3>
+            <ul class="description__icons">
+              <li class="description__item">
+                <div class="description__img-wrap"><img alt="icons" src="/images/icons/free.png" class="description__img"></div>
+                <p class="description__text">для бесплатных рекламных изданий</p>
+              </li>
+              <li class="description__item">
+                <div class="description__img-wrap"><img alt="icons" src="/images/icons/new.png" class="description__img"></div>
+                <p class="description__text">для бесплатных рекламных изданий</p>
+              </li>
+              <li class="description__item">
+                <div class="description__img-wrap"><img alt="icons" src="/images/icons/roz.png" class="description__img"></div>
+                <p class="description__text">для бесплатных рекламных изданий</p>
+              </li>
+              <li class="description__item">
+                <div class="description__img-wrap"><img alt="icons" src="/images/icons/pen.png" class="description__img"></div>
+                <p class="description__text">для бесплатных рекламных изданий</p>
+              </li>
+            </ul>
+            <h4 class="title4 description__min-title">При распространении у нас вы получите:<ul class="you-take__list"><li class="you-take__item"><div class="you-take__img aud audit"></div><div class="you-take-text"><p class="you-take__title">Целевая аудитория</p><p class="you-take__p">Мы предоставляем места с платежеспособной аудиторией: одни из лучших бизнес-центров Санкт-Петербурга и другие места, которые наши специалисты отбирали в течении нескольких лет. Реклама в Вашем издании будет эффективной</p></div></li><li class="you-take__item"><div class="you-take__img aud effective"></div><div class="you-take-text"><p class="you-take__title">Эффективное распространение</p><p class="you-take__p">На наших стойках представлены газеты и журналы, часть из которых находится в розничной продаже, а для нашей удитории бесплатны. Люди заинтересованы подойти к нашей стойке и обязательно увидят Ваше издание</p></div></li><li class="you-take__item"><div class="you-take__img aud economy"></div><div class="you-take-text"><p class="you-take__title">Экономия</p><p class="you-take__p">Вам не надо печатать огромный тираж - с наших стоек издание отправляется в руки только заинтересованного читателя. Воспользоваться нашими услугами выгоднее, чем содержать собственную службу распространения.</p></div></li><li class="you-take__item"><div class="you-take__img aud effect2"></div><div class="you-take-text"><p class="you-take__title">Двойной эффект</p><p class="you-take__p">Наши фотоотчеты мы дублируем в Instagram. Вы сможете демонстрировать их своим рекламодателям. Кроме того, о Вашем издании узнают наши действующие и потенциальные клиенты - Ваши будущие рекламодатели.</p></div></li></ul></h4></div>
+          <footer class="local-footer footer-distribution clearfix">
+            <div class="container">
+              <p class="footer-text footer-distribution__text soc-footer">Получите социологические характеристики нашей аудитории</p>
+              <button class="button distribution-button soc-footer-btn">Получить</button>
+            </div>
+          </footer>
+        </section>
+        <!--экран 4-->
+        <section class="section about">
+          <div class="container">
+            <div class="slider_about">
+              <h3 class="title3 slider__name">наши клиенты говорят о нас:</h3>
+              <ul id="slider2" class="clients">
+                <li class="clients_item"><img alt="img-name" src="/images/icons/mos.png" class="client__img">
+                  <div class="clients-slide slider1">
+                    <p class="clients__title">Moscow Business School и Московский Технологический Институт</p>
+                    <p class="clients__text">выражают благодарность компании Line Media Promotion. Данная Компания зарекомендовала себя как надежный партнер. Очень хороший сервис: высокое качество, оперативность, индивидуальный подход и гибкость. Все запросы (размещение и изготовление
+                      полиграфии) выполняются вовремя, быстро и без потери качества.</p>
+                    <p class="clients__name">Белькова С.В., Директор филиала НОУ ВПО МТИ "ВТУ" в Санкт-Петербурге</p>
+                  </div>
+                </li>
+                <li class="clients_item">
+                  <div class="wrap"><img alt="img-name" src="/images/icons/mos.png" class="client__img"></div>
+                  <div class="clients-slide slider1">
+                    <p class="clients__title">Moiness School и Московский Технологический Институт</p>
+                    <p class="clients__text">выражают благодарность компании Line Media Promotion. Данная Компания зарекомендовала себя как надежный партнер. Очень хороший сервис: высокое качество, оперативность, индивидуальный подход и гибкость. Все запросы (размещение и изготовление
+                      полиграфии) выполняются вовремя, быстро и без потери качества.</p>
+                    <p class="clients__name">Белькова С.В., Директор филиала НОУ ВПО МТИ "ВТУ" в Санкт-Петербурге</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <h3 class="title3 easy">Работать с нами очень просто<div class="easy-block"><div class="easy__top"><ul class="easy__top__list"><li class="easy__top__item">Выбираете тарифный план (пакет)</li><li class="easy__top__item">Мы готовим пакет документов и предоставляем его Вам</li><li class="easy__top__item">Мы осуществляем развоз и выкладку тиража, контролируем его наличие на точках</li><li class="easy__top__item">После выполнения работ мы подписываем с Вами акт</li></ul><img alt="img-name" src="/images/decor/8.jpg" class="imgclass"><ul class="easy__bottom__list"><li class="easy__bottom__item">Оставляете заявку</li><li class="easy__bottom__item">Встречаем тираж у нас на складе либо забираем его у Вас</li><li class="easy__bottom__item">Мы делаем фотоотчет, предоставляем его Вам и дублируем в instagram</li><li class="easy__bottom__item">Вы довольны результатом и делаете новый заказ</li></ul></div></div></h3></div>
+          <footer class="local-footer footer-about clearfix">
+            <div class="container">
+              <p class="footer-text footer-about__text">Посмотрите наши отчеты по распространению изданий</p>
+              <button class="button about-button take-btn">Посмотреть</button>
+            </div>
+          </footer>
+          <!--экран 5-->
+          <section class="section tafif">
+            <div class="container">
+              <h3 class="title3 tarif__title">наши пакетные тарифные планы</h3>
+              <ul class="tarific__top">
+                <li class="tarific__item">
+                  <div class="tarific__price">2 990 p.<span class="tarific__price-span">зa тираж / 15 адресов</span></div>
+                  <div class="trafic__name">РАЙОН</div>
+                  <ul class="trafic__description-list">
+                    <li class="trafic__description-items">Издание любого формата (от А6 до А3)</li>
+                    <li class="trafic__description-items">Распространение до 1000 экз.</li>
+                    <li class="trafic__description-items">Фотоотчет с каждой точки</li>
+                    <li class="trafic__description-items">Бесплатная доставка на наш склад </li>
+                  </ul>
+                  <button class="button trafic__button">Заказать</button>
+                </li>
+                <li class="tarific__item">
+                  <div class="tarific__price">2 990 p.<span class="tarific__price-span">зa тираж / 15 адресов</span></div>
+                  <div class="trafic__name">РАЙОН</div>
+                  <ul class="trafic__description-list">
+                    <li class="trafic__description-items">Издание любого формата (от А6 до А3)</li>
+                    <li class="trafic__description-items">Распространение до 1000 экз.</li>
+                    <li class="trafic__description-items">Фотоотчет с каждой точки</li>
+                    <li class="trafic__description-items">Бесплатная доставка на наш склад </li>
+                  </ul>
+                  <button class="button trafic__button">Заказать</button>
+                </li>
+                <li class="tarific__item">
+                  <div class="tarific__price">2 990 p.<span class="tarific__price-span">зa тираж / 15 адресов</span></div>
+                  <div class="trafic__name">РАЙОН</div>
+                  <ul class="trafic__description-list">
+                    <li class="trafic__description-items">Издание любого формата (от А6 до А3)</li>
+                    <li class="trafic__description-items">Распространение до 1000 экз.</li>
+                    <li class="trafic__description-items">Фотоотчет с каждой точки</li>
+                    <li class="trafic__description-items">Бесплатная доставка на наш склад </li>
+                  </ul>
+                  <button class="button trafic__button">Заказать</button>
+                </li>
+                <li class="tarific__item">
+                  <div class="tarific__price">2 990 p.<span class="tarific__price-span">зa тираж / 15 адресов</span></div>
+                  <div class="trafic__name">РАЙОН</div>
+                  <ul class="trafic__description-list">
+                    <li class="trafic__description-items">Издание любого формата (от А6 до А3)</li>
+                    <li class="trafic__description-items">Распространение до 1000 экз.</li>
+                    <li class="trafic__description-items">Фотоотчет с каждой точки</li>
+                    <li class="trafic__description-items">Бесплатная доставка на наш склад </li>
+                  </ul>
+                  <button class="button trafic__button">Заказать</button>
+                </li>
+              </ul>
+              <div class="trust">
+                <h3 class="title3 trust__title">нам доверяют</h3>
+                <ul id="slider3" class="trust__slider">
+                  <li class="trust__item"><img alt="img-name" src="/images/icons/bol.png" class="imgclass"><img alt="img-name" src="/images/icons/inst.png" class="imgclass"><img alt="img-name" src="/images/icons/mos.png" class="imgclass"><img alt="img-name" src="/images/icons/moto.png"
+                    class="imgclass"><img alt="img-name" src="/images/icons/rzd.png" class="imgclass"><img alt="img-name" src="/images/content/tar.png" class="imgclass"></li>
+                  <li class="trust__item"><img alt="img-name" src="/images/content/logo.png" class="imgclass"><img alt="img-name" src="/images/content/logo.png" class="imgclass"><img alt="img-name" src="/images/content/logo.png" class="imgclass"><img alt="img-name" src="/images/content/logo.png"
+                    class="imgclass"><img alt="img-name" src="/images/content/logo.png" class="imgclass"><img alt="img-name" src="/images/content/logo.png" class="imgclass"></li>
+                </ul>
+              </div>
+            </div>
+            <footer class="local-footer footer-about clearfix">
+              <div class="container">
+                <p class="footer-text footer-about__text">Посмотрите наши отчеты по распространению изданий</p>
+                <button class="button about-button take-btn">Посмотреть</button>
+              </div>
+            </footer>
+          </section>
+          <div class="section">
+            <!--экран 6-->
+            <section class="facts">
+              <div class="container clearfix">
+                <h3 class="title3 facts__title">Факты о нас</h3>
+                <ul class="facts__list">
+                  <li class="facts_item">
+                    <div class="facts__img"><img alt="img-name" src="/images/icons/ph.png" class="facts__image"></div>
+                    <p class="facts_text">2 города работы</p>
+                  </li>
+                  <li class="facts_item">
+                    <div class="facts__img"><img alt="img-name" src="/images/icons/cal.png" class="facts__image"></div>
+                    <p class="facts_text">7 днй в неделю на связи</p>
+                  </li>
+                  <li class="facts_item">
+                    <div class="facts__img"><img alt="img-name" src="/images/icons/clock.png" class="facts__image"></div>
+                    <p class="facts_text">3дня на запуск проекта</p>
+                  </li>
+                  <li class="facts_item">
+                    <div class="facts__img"><img alt="img-name" src="/images/icons/portf.png" class="facts__image"></div>
+                    <p class="facts_text">8 лет работы</p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </section>
       </div>
     </div>
     <footer class="footer"></footer>
@@ -123,6 +284,8 @@
       window.jQuery || document.write('<script src="/js/_vendor/jquery-1.11.3.min.js"><\/script>');
     </script>
     <script src="/scripts/_vendor/bxslider/jquery.bxSlider.min.js"></script>
+    <script src="/scripts/_vendor/fullpage.js/jquery.fullPage.js"></script>
+    <script src="/scripts/_vendor/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
     <script src="/scripts/main.js"></script>
   </body>
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --------- normalize --------- */
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -609,6 +610,7 @@ body {
   width: 960px;
   margin: 0 auto; }
 
+/* ПЕРВЫЙ ЭКРАН 11111 */
 .main {
   background-image: url("/images/bg/bg1.jpg");
   background-size: cover;
@@ -775,6 +777,7 @@ body {
   text-transform: uppercase; }
 
 /* distribution section */
+/* ВТОРОЙ ЭКРАН 222222 */
 .distribution {
   padding: 76px 0px 0px 0px;
   background-image: url("/images/bg/pattern.jpg"); }
@@ -894,3 +897,384 @@ body {
 .distribution-button:hover {
   border-top: 2px solid #ab3b06;
   background-image: linear-gradient(to top, #C3511A 0%, #EF6320 10%); }
+
+.section {
+  background-color: #000; }
+
+/* ТРЕТИЙ  ЭКРАН 33333 */
+.description {
+  background-image: url("/images/bg/bg2.jpg");
+  background-size: cover;
+  min-height: 600px;
+  padding: 85px 0px 0px 0px;
+  color: #363636; }
+
+.description__icons {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  text-align: center; }
+
+.description__item {
+  float: left;
+  width: 150px;
+  padding: 10px 35px 30px 35px; }
+
+.description__title {
+  text-align: center;
+  font-family: 'open_sansregular', arial;
+  font-size: 30px;
+  font-weight: 100;
+  padding-bottom: 29px; }
+
+.description__img-wrap {
+  height: 88px;
+  width: 130px;
+  padding-bottom: 5px; }
+
+.description__text {
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.description__min-title {
+  padding-bottom: 20px; }
+
+.you-take__list {
+  width: 830px;
+  margin: 0 auto;
+  padding-top: 30px; }
+
+.you-take__item {
+  list-style: none;
+  width: 400px;
+  height: 150px;
+  display: inline-block;
+  float: left; }
+
+.audit {
+  background-image: url(/images/icons/aud.png);
+  height: 50px;
+  width: 60px;
+  display: inline-block;
+  float: left; }
+
+.you-take-text {
+  display: inline-block;
+  width: 270px;
+  padding-left: 20px;
+  text-align: left;
+  margin-right: 10px; }
+
+.aud:after {
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: #999899;
+  margin-left: 87px; }
+
+.you-take__title {
+  font-size: 14px;
+  margin: 0;
+  color: #1d1b1b;
+  font-family: 'open_sansregular', arial; }
+
+.you-take__p {
+  font-size: 10px;
+  font-family: 'open_sanslight_italic', arial;
+  text-transform: none;
+  color: #000; }
+
+.effective {
+  background-image: url(/images/icons/graph.png);
+  height: 50px;
+  width: 60px;
+  display: inline-block;
+  float: left; }
+
+.economy {
+  background-image: url(/images/icons/rub.png);
+  height: 50px;
+  width: 60px;
+  display: inline-block;
+  float: left; }
+
+.effect2 {
+  background-image: url(/images/icons/x2.png);
+  height: 50px;
+  width: 60px;
+  display: inline-block;
+  float: left; }
+
+/* ЧЕТВЁРТЫЙ ЭКРАН 44444 */
+.about {
+  padding: 76px 0px 0px 0px;
+  background-image: url("/images/bg/pattern.jpg"); }
+
+.clients {
+  margin: 0 auto;
+  width: 550px; }
+
+.slider__name, .easy {
+  text-align: center;
+  font-weight: 100; }
+
+.slider_about {
+  width: 680px;
+  min-height: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc; }
+
+.clients-slide {
+  width: 400px;
+  float: right;
+  padding-left: 10px; }
+
+.clients__img-wrap {
+  height: 400px;
+  float: left; }
+
+.clients__title,
+.clients__text,
+.clients__name {
+  margin: 0px; }
+
+.clients__title {
+  font-family: 'open_sansbold', arial;
+  font-size: 14px;
+  color: #636363;
+  margin-bottom: 10px; }
+
+.clients__text {
+  font-size: 10px;
+  font-family: 'open_sanslight_italic', arial;
+  color: #636363; }
+
+.clients__name {
+  font-size: 8px;
+  font-family: 'open_sanslight_italic', arial;
+  margin-bottom: 4px;
+  color: #c2c2c2; }
+
+#slider2 {
+  height: 400px;
+  margin: 0 auto; }
+
+.clients_item {
+  height: 300px; }
+
+.wrap {
+  height: 300px;
+  width: 100px; }
+
+#slider2 > .bx-next {
+  position: absolute;
+  top: 40%;
+  right: 60px;
+  z-index: 999;
+  width: 30px;
+  height: 46px;
+  text-indent: -999999px;
+  background: url(/images/icons/arrow3.png) no-repeat 0 0px; }
+
+.slider2 {
+  width: 400px; }
+
+.easy {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px; }
+
+.easyw {
+  margin: 0px;
+  display: inline-block;
+  font-size: 12px;
+  width: 40px;
+  padding-left: 40px; }
+
+.easy__top__list {
+  display: inline-block;
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0;
+  margin-left: -144px; }
+
+.easy__top__item {
+  font-size: 12px;
+  width: 220px;
+  display: inline-block; }
+
+.easy__bottom__list {
+  display: inline-block;
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0;
+  margin-left: 73px; }
+
+.easy__bottom__item {
+  font-size: 12px;
+  width: 220px;
+  display: inline-block; }
+
+.footer-about {
+  background: url(/images/decor/line2.jpg);
+  background-position: center; }
+
+.footer-about__text {
+  margin: 0px;
+  float: left; }
+
+.about-button {
+  float: right;
+  background-image: linear-gradient(to top, #C3511A 0%, #EF6320 100%);
+  padding: 5px 10px 5px 10px;
+  font-family: 'open_sanslight', arial;
+  font-size: 14px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 31px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+  width: 166px; }
+
+.about-button:hover {
+  border-top: 2px solid #ab3b06;
+  background-image: linear-gradient(to top, #C3511A 0%, #EF6320 10%); }
+
+.tafif {
+  background-color: #0070ba;
+  min-height: 200px;
+  padding: 80px 0px 0px 0px; }
+
+.tarif__title {
+  text-align: center;
+  color: #fff;
+  font-family: 'open_sansregular', arial;
+  font-weight: 100; }
+
+.tarif__title:after {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 1px;
+  background-color: #00558e;
+  border-bottom: 1px solid #0063a4;
+  margin: 26px auto; }
+
+.tarific__top {
+  margin-bottom: 20px; }
+
+.tarific__item {
+  width: 218px;
+  background-color: #fff;
+  border-radius: 5px;
+  list-style-type: none;
+  border: 2px solid #fff;
+  display: inline-block;
+  margin-right: 5px; }
+
+.tarific__item:last-child {
+  padding-right: 0px; }
+
+.tarific__item:hover {
+  border: 2px solid #a9c6f9; }
+
+.tarific__price {
+  text-align: center;
+  padding: 20px 15px;
+  color: #0070ba;
+  font-family: 'open_sansbold', arial;
+  font-size: 30px;
+  font-weight: 800; }
+
+.tarific__price-span {
+  font-size: 13px;
+  display: block; }
+
+.trafic__name {
+  text-align: center;
+  font-family: 'open_sansregular', arial;
+  background-color: #003188;
+  color: #fff;
+  padding: 10px 0px;
+  font-size: 24px; }
+
+.trafic__description-list {
+  list-style-type: none;
+  padding: 0px 5px 0px 10px; }
+
+.trafic__description-items {
+  padding-bottom: 10px;
+  font-family: 'open_sansregular', arial;
+  font-size: 12px;
+  color: #858585; }
+
+.trafic__button {
+  background-image: linear-gradient(to top, #C3511A 0%, #EF6320 100%);
+  padding: 10px 10px 9px 11px;
+  font-family: 'open_sanslight', arial;
+  font-size: 14px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 10px 20px;
+  width: 185px; }
+
+.trafic__button:hover {
+  background-image: linear-gradient(to top, #C3511A 0%, #EF6320 10%);
+  border-top: 2px solid #ab3b06; }
+
+.trust__slider {
+  background-color: #ccc; }
+
+.trust {
+  background-color: #ccc;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.imgclass {
+  padding-right: 30px; }
+
+.trust__item {
+  list-style-type: none; }
+
+.trust__title {
+  font-family: 'open_sanslight', arial;
+  font-size: 14px;
+  padding-top: 30px;
+  margin: o; }
+
+/* 5 ПЯТЫЙ экран  55555 */
+.facts {
+  background-color: #5e5e5e;
+  color: #fff;
+  padding: 40px 0px; }
+
+.facts__title {
+  color: #fff;
+  text-align: center;
+  vertical-align: baseline;
+  margin-bottom: 20px; }
+
+.facts__list {
+  width: 700px;
+  margin: 0 auto; }
+
+.facts_item {
+  list-style-type: none;
+  float: left;
+  padding-right: 20px;
+  text-align: center;
+  vertical-align: middle; }
+
+.facts_text {
+  margin: 0px; }

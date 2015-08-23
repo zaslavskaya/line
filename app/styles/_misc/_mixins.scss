@@ -272,3 +272,11 @@
 @mixin liststyle{
 	list-style: none;	
 }
+
+@mixin red_btn {
+	background-image: linear-gradient(to top, #C3511A 0%, #EF6320 100%);
+}
+
+@mixin red_btn_h {
+	background-image: linear-gradient(to top, #C3511A 0%, #EF6320 10%);
+}

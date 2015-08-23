@@ -12,7 +12,8 @@ html
 
         meta(name='viewport' content='width=device-width')
         link(rel='stylesheet' type='text/css' href='/styles/css/main.css' media='screen, projection, print')
-        link(rel='stylesheet' type='text/css' href='/scripts/_vendor/bxslider/bx_styles/bx_styles.css')   
+        link(rel='stylesheet' type='text/css' href='/scripts/_vendor/bxslider/bx_styles/bx_styles.css')
+        link(rel='stylesheet' type='text/css' href='/scripts/_vendor/fullpage.js/jquery.fullPage.css')   
         script(src='/scripts/_vendor/modernizr-2.6.2-respond-1.1.0.min.js')
 
     body
@@ -21,49 +22,52 @@ html
         <![endif]-->
 
         .wrapper
-            .maincontent
-                include _common/header.jade
-                section.main
-                    div.container.clearfix
-                        ul.info__list
-                            h2.title.info__title Распространение бесплатных изданий и возвратных тиражей в Санкт-Петербурге
-                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
-                            li.info__item Адресная программа распространения с широким охватом и качественная логистика. 
-                            li.info__item Возьмем на себя весь объем работ по распространению - от типографии до читателя. 
-                            li.info__item Включимся  в Вашу систему распространения, взаимодействуем с дистрибьюторами и ТК.
-                        div.action
-                            h2.title.action__title акция
-                            p.action__text Закажите 2 месяца распространения и получите 3-й месяц 
-                                span.action__text_span B подарок!
-                            button.button.action__button Заказать распространение
-                        ul.statistic
-                            li.statistic__item 
-                                div.statistic__circle-wrap
-                                    img.statistic__icons(alt="img-name", src="/images/icons/sx2.png")
-                                    div.statistic__numbers 45000m2 
-                                        span.statistic__numbers-span площади
-                                p.statistic__name занятой людьми, которые видят Ваше издание каждый день
-                             li.statistic__item 
-                                div.statistic__circle-wrap
-                                    img.statistic__icons(alt="img-name", src="/images/icons/peoples.png")
-                                    div.statistic__numbers  30 000 
-                                        span.statistic__numbers-span человек
-                                p.statistic__name проходимость наших точек в день
-                             li.statistic__item 
-                                div.statistic__circle-wrap
-                                    img.statistic__icons(alt="img-name", src="/images/icons/book.png")
-                                    div.statistic__numbers  4000
-                                        span.statistic__numbers-span экземпляров
-                                p.statistic__name которые мы можем гарантированно распространить за месяц
-                             li.statistic__item 
-                                div.statistic__circle-wrap
-                                    img.statistic__icons(alt="img-name", src="/images/icons/location.png")
-                                    div.statistic__numbers  75
-                                        span.statistic__numbers-span мест
-                                p.statistic__name в 10 районах Санкт-Петербурга
-                    footer.footer-main.local-footer
-                        p.footer-text распространим  всё до последнего экземпляра!
-                section.distribution
+            .maincontent#fullpage
+                div.section
+                    include _common/header.jade
+                    //главный экран
+                    section.main
+                        div.container.clearfix
+                            ul.info__list
+                                h2.title.info__title Распространение бесплатных изданий и возвратных тиражей в Санкт-Петербурге
+                                li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
+                                li.info__item Адресная программа распространения с широким охватом и качественная логистика. 
+                                li.info__item Возьмем на себя весь объем работ по распространению - от типографии до читателя. 
+                                li.info__item Включимся  в Вашу систему распространения, взаимодействуем с дистрибьюторами и ТК.
+                            div.action
+                                h2.title.action__title акция
+                                p.action__text Закажите 2 месяца распространения и получите 3-й месяц 
+                                    span.action__text_span B подарок!
+                                button.button.action__button Заказать распространение
+                            ul.statistic
+                                li.statistic__item 
+                                    div.statistic__circle-wrap
+                                        img.statistic__icons(alt="img-name", src="/images/icons/sx2.png")
+                                        div.statistic__numbers 45000m2 
+                                            span.statistic__numbers-span площади
+                                    p.statistic__name занятой людьми, которые видят Ваше издание каждый день
+                                 li.statistic__item 
+                                    div.statistic__circle-wrap
+                                        img.statistic__icons(alt="img-name", src="/images/icons/peoples.png")
+                                        div.statistic__numbers  30 000 
+                                            span.statistic__numbers-span человек
+                                    p.statistic__name проходимость наших точек в день
+                                 li.statistic__item 
+                                    div.statistic__circle-wrap
+                                        img.statistic__icons(alt="img-name", src="/images/icons/book.png")
+                                        div.statistic__numbers  4000
+                                            span.statistic__numbers-span экземпляров
+                                    p.statistic__name которые мы можем гарантированно распространить за месяц
+                                 li.statistic__item 
+                                    div.statistic__circle-wrap
+                                        img.statistic__icons(alt="img-name", src="/images/icons/location.png")
+                                        div.statistic__numbers  75
+                                            span.statistic__numbers-span мест
+                                    p.statistic__name в 10 районах Санкт-Петербурга
+                        footer.footer-main.local-footer
+                            p.footer-text распространим  всё до последнего экземпляра!
+                // экран 2
+                section.distribution.section
                     div.container.clearfix
                         div.distribution-top
                             h3.title3.distribution__title Наша система распространения
@@ -88,14 +92,179 @@ html
                         div.container
                             p.footer-text.footer-distribution__text Ознакомьтесь с нашей адресной программой распространения
                             button.button.distribution-button Ознакомиться
+                //экран 3
+                section.description.section
+                    div.container.clearfix
+                        h3.title3.description__title Распространение у нас лучше всего подходит
+                        ul.description__icons
+                            li.description__item
+                                div.description__img-wrap
+                                    img.description__img(alt="icons", src="/images/icons/free.png")
+                                p.description__text для бесплатных рекламных изданий
+                            li.description__item
+                                div.description__img-wrap
+                                    img.description__img(alt="icons", src="/images/icons/new.png")
+                                p.description__text для бесплатных рекламных изданий
+                            li.description__item
+                                div.description__img-wrap
+                                    img.description__img(alt="icons", src="/images/icons/roz.png")
+                                p.description__text для бесплатных рекламных изданий
+                            li.description__item
+                                div.description__img-wrap
+                                    img.description__img(alt="icons", src="/images/icons/pen.png")
+                                p.description__text для бесплатных рекламных изданий
+                        h4.title4.description__min-title При распространении у нас вы получите:
+                            ul.you-take__list
+                                li.you-take__item
+                                    div.you-take__img.aud.audit
+                                    div.you-take-text
+                                        p.you-take__title Целевая аудитория
+                                        p.you-take__p Мы предоставляем места с платежеспособной аудиторией: одни из лучших бизнес-центров Санкт-Петербурга и другие места, которые наши специалисты отбирали в течении нескольких лет. Реклама в Вашем издании будет эффективной
+                                li.you-take__item
+                                    div.you-take__img.aud.effective
+                                    div.you-take-text
+                                        p.you-take__title Эффективное распространение
+                                        p.you-take__p На наших стойках представлены газеты и журналы, часть из которых находится в розничной продаже, а для нашей удитории бесплатны. Люди заинтересованы подойти к нашей стойке и обязательно увидят Ваше издание
+                                li.you-take__item
+                                    div.you-take__img.aud.economy
+                                    div.you-take-text
+                                        p.you-take__title Экономия
+                                        p.you-take__p Вам не надо печатать огромный тираж - с наших стоек издание отправляется в руки только заинтересованного читателя. Воспользоваться нашими услугами выгоднее, чем содержать собственную службу распространения.
+                                li.you-take__item
+                                    div.you-take__img.aud.effect2
+                                    div.you-take-text
+                                        p.you-take__title Двойной эффект
+                                        p.you-take__p Наши фотоотчеты мы дублируем в Instagram. Вы сможете демонстрировать их своим рекламодателям. Кроме того, о Вашем издании узнают наши действующие и потенциальные клиенты - Ваши будущие рекламодатели.
+                    footer.local-footer.footer-distribution.clearfix 
+                        div.container
+                            p.footer-text.footer-distribution__text.soc-footer Получите социологические характеристики нашей аудитории
+                            button.button.distribution-button.soc-footer-btn Получить
+                //экран 4
+                section.section.about
+                    div.container
+                        div.slider_about
+                            h3.title3.slider__name наши клиенты говорят о нас:
+                            ul#slider2.clients
+                                li.clients_item
+                                    img.client__img(alt="img-name", src="/images/icons/mos.png")
+                                    div.clients-slide.slider1
+                                        p.clients__title Moscow Business School и Московский Технологический Институт
+                                        p.clients__text выражают благодарность компании Line Media Promotion. Данная Компания зарекомендовала себя как надежный партнер. Очень хороший сервис: высокое качество, оперативность, индивидуальный подход и гибкость. Все запросы (размещение и изготовление полиграфии) выполняются вовремя, быстро и без потери качества.
+                                        p.clients__name Белькова С.В., Директор филиала НОУ ВПО МТИ "ВТУ"  в Санкт-Петербурге
+                                li.clients_item
+                                    div.wrap
+                                        img.client__img(alt="img-name", src="/images/icons/mos.png")
+                                    div.clients-slide.slider1
+                                        p.clients__title Moiness School и Московский Технологический Институт
+                                        p.clients__text выражают благодарность компании Line Media Promotion. Данная Компания зарекомендовала себя как надежный партнер. Очень хороший сервис: высокое качество, оперативность, индивидуальный подход и гибкость. Все запросы (размещение и изготовление полиграфии) выполняются вовремя, быстро и без потери качества.
+                                        p.clients__name Белькова С.В., Директор филиала НОУ ВПО МТИ "ВТУ"  в Санкт-Петербурге
+                        h3.title3.easy Работать с нами очень просто
+                            div.easy-block
+                                div.easy__top
+                                    ul.easy__top__list
+                                        li.easy__top__item Выбираете тарифный план (пакет)
+                                        li.easy__top__item Мы готовим пакет документов и предоставляем его Вам
+                                        li.easy__top__item Мы осуществляем развоз и выкладку тиража, контролируем его наличие на точках
+                                        li.easy__top__item После выполнения работ мы подписываем с Вами акт
+                                    img.imgclass(alt="img-name", src="/images/decor/8.jpg")
+                                    ul.easy__bottom__list
+                                        li.easy__bottom__item Оставляете заявку
+                                        li.easy__bottom__item Встречаем тираж у нас на складе либо забираем его у Вас
+                                        li.easy__bottom__item Мы делаем фотоотчет, предоставляем его Вам и дублируем в instagram
+                                        li.easy__bottom__item Вы довольны результатом и делаете новый заказ
+                    footer.local-footer.footer-about.clearfix 
+                        div.container
+                            p.footer-text.footer-about__text Посмотрите наши отчеты по распространению изданий
+                            button.button.about-button.take-btn Посмотреть
+                    //экран 5
+                    section.section.tafif
+                        div.container
+                            h3.title3.tarif__title наши пакетные тарифные планы
+                            ul.tarific__top
+                                li.tarific__item
+                                    div.tarific__price 2 990 p.
+                                        span.tarific__price-span зa тираж / 15 адресов
+                                    div.trafic__name РАЙОН
+                                    ul.trafic__description-list
+                                        li.trafic__description-items Издание любого формата (от А6 до А3)
+                                        li.trafic__description-items Распространение до 1000 экз.
+                                        li.trafic__description-items Фотоотчет с каждой точки
+                                        li.trafic__description-items Бесплатная доставка на наш склад                                   
+                                    button.button.trafic__button Заказать
+                                li.tarific__item
+                                    div.tarific__price 2 990 p.
+                                        span.tarific__price-span зa тираж / 15 адресов
+                                    div.trafic__name РАЙОН
+                                    ul.trafic__description-list
+                                        li.trafic__description-items Издание любого формата (от А6 до А3)
+                                        li.trafic__description-items Распространение до 1000 экз.
+                                        li.trafic__description-items Фотоотчет с каждой точки
+                                        li.trafic__description-items Бесплатная доставка на наш склад                                   
+                                    button.button.trafic__button Заказать
+                                li.tarific__item
+                                    div.tarific__price 2 990 p.
+                                        span.tarific__price-span зa тираж / 15 адресов
+                                    div.trafic__name РАЙОН
+                                    ul.trafic__description-list
+                                        li.trafic__description-items Издание любого формата (от А6 до А3)
+                                        li.trafic__description-items Распространение до 1000 экз.
+                                        li.trafic__description-items Фотоотчет с каждой точки
+                                        li.trafic__description-items Бесплатная доставка на наш склад                                   
+                                    button.button.trafic__button Заказать
+                                li.tarific__item
+                                    div.tarific__price 2 990 p.
+                                        span.tarific__price-span зa тираж / 15 адресов
+                                    div.trafic__name РАЙОН
+                                    ul.trafic__description-list
+                                        li.trafic__description-items Издание любого формата (от А6 до А3)
+                                        li.trafic__description-items Распространение до 1000 экз.
+                                        li.trafic__description-items Фотоотчет с каждой точки
+                                        li.trafic__description-items Бесплатная доставка на наш склад                                   
+                                    button.button.trafic__button Заказать
+                            div.trust
+                                h3.title3.trust__title нам доверяют
+                                ul#slider3.trust__slider
+                                    li.trust__item
+                                        img.imgclass(alt="img-name", src="/images/icons/bol.png")
+                                        img.imgclass(alt="img-name", src="/images/icons/inst.png")
+                                        img.imgclass(alt="img-name", src="/images/icons/mos.png")
+                                        img.imgclass(alt="img-name", src="/images/icons/moto.png")
+                                        img.imgclass(alt="img-name", src="/images/icons/rzd.png")
+                                        img.imgclass(alt="img-name", src="/images/content/tar.png")
+                                    li.trust__item
+                                        img.imgclass(alt="img-name", src="/images/content/logo.png")
+                                        img.imgclass(alt="img-name", src="/images/content/logo.png")
+                                        img.imgclass(alt="img-name", src="/images/content/logo.png")
+                                        img.imgclass(alt="img-name", src="/images/content/logo.png")
+                                        img.imgclass(alt="img-name", src="/images/content/logo.png")
+                                        img.imgclass(alt="img-name", src="/images/content/logo.png")
+                        footer.local-footer.footer-about.clearfix 
+                            div.container
+                                p.footer-text.footer-about__text Посмотрите наши отчеты по распространению изданий
+                                button.button.about-button.take-btn Посмотреть
+                    div.section
+                        //экран 6
+                        section.facts
+                            div.container.clearfix
+                                h3.title3.facts__title Факты о нас
+                                ul.facts__list
+                                    li.facts_item
+                                        div.facts__img
+                                            img.facts__image(alt="img-name", src="/images/icons/ph.png")
+                                        p.facts_text 2 города работы
+                                    li.facts_item
+                                        div.facts__img
+                                            img.facts__image(alt="img-name", src="/images/icons/cal.png")
+                                        p.facts_text 7 днй в неделю на связи
+                                    li.facts_item
+                                        div.facts__img
+                                            img.facts__image(alt="img-name", src="/images/icons/clock.png")
+                                        p.facts_text 3дня на запуск проекта
+                                    li.facts_item
+                                        div.facts__img
+                                            img.facts__image(alt="img-name", src="/images/icons/portf.png")
+                                        p.facts_text 8 лет работы
 
-
-
-
-
-
-
-                
 
 
 
@@ -105,5 +274,7 @@ html
         script.
             window.jQuery || document.write('<script src="/js/_vendor/jquery-1.11.3.min.js"><\/script>');
         script(src='/scripts/_vendor/bxslider/jquery.bxSlider.min.js')
+        script(src='/scripts/_vendor/fullpage.js/jquery.fullPage.js')
+        script(src='/scripts/_vendor/fullpage.js/vendors/jquery.slimscroll.min.js')
             
         script(src='/scripts/main.js')

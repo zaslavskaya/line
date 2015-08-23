@@ -97,17 +97,25 @@ position: absolute;
 
 
 .bx-wrapper {
-	element.style {
+	
     width: 360px;
     margin-top: 50px;
     margin-left: 60px;
     position: relative;
+
 }
+
+
+#slider2 < .bx-next {
+position: absolute;
+    top: 40%;
+    right: 60px;
+    z-index: 999;
+    width: 30px;
+    height: 46px;
+    text-indent: -999999px;
+    background: url(/images/icons/arrow3.png) no-repeat 0 0px;
 }
-
-
-
-
 
 
 
