@@ -261,4 +261,14 @@
 	}
 }
 
+/* for this lend mixins*/
 
+@mixin buttonstyle{
+	border:none;
+	border-radius: 5px;
+	outline: none;
+	
+}
+@mixin liststyle{
+	list-style: none;	
+}

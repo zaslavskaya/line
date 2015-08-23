@@ -18,7 +18,7 @@
     display: block;
     float: left;
        padding-top: 24px;
-    padding-left: 44px;
+    padding-left: 41px;
 }
 
 .navigation__list {
@@ -31,7 +31,7 @@
 .navigation__item {
     float: left;
     font-size: 12px;
-    padding-right: 10px;
+    padding-right: 19px;
     font-family: 'open_sanslight', arial;
 }
 
@@ -49,13 +49,26 @@
 .callback {
     display: block;
     float: right;
+    text-align: center;
+        padding-top: 4px;
+
 }
 
 .number {
-    margin: 0;
+        margin: 0px 0px 4px 0px;
     text-align: center;
     font-family: 'open_sansbold', arial;
     font-size: 20px;
     color: #fff;
 }
+.callback__button { 
+	background-color: #0070ba; 
+	color: #fff;
+	  font-family: 'open_sanslight', arial;
+}
 
+
+.callback__button:hover {
+	border-top: 1px solid  #015b96;
+	background-color: #088be2; 
+}

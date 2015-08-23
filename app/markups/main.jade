@@ -12,6 +12,7 @@ html
 
         meta(name='viewport' content='width=device-width')
         link(rel='stylesheet' type='text/css' href='/styles/css/main.css' media='screen, projection, print')
+        link(rel='stylesheet' type='text/css' href='/scripts/_vendor/bxslider/bx_styles/bx_styles.css')   
         script(src='/scripts/_vendor/modernizr-2.6.2-respond-1.1.0.min.js')
 
     body
@@ -21,24 +22,77 @@ html
 
         .wrapper
             .maincontent
-                include _common/header.jade 
+                include _common/header.jade
                 section.main
                     div.container.clearfix
                         ul.info__list
                             h2.title.info__title Распространение бесплатных изданий и возвратных тиражей в Санкт-Петербурге
                             li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
-                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
-                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения. 
-                            li.info__item Предоставляем эффективный, экономичный и надежный канал распространения.
+                            li.info__item Адресная программа распространения с широким охватом и качественная логистика. 
+                            li.info__item Возьмем на себя весь объем работ по распространению - от типографии до читателя. 
+                            li.info__item Включимся  в Вашу систему распространения, взаимодействуем с дистрибьюторами и ТК.
                         div.action
                             h2.title.action__title акция
-                            p.action__text Закажите 2 месяца распространения и получите 3-й месяц в подарок!
-                            button.button.action__button Заказать
+                            p.action__text Закажите 2 месяца распространения и получите 3-й месяц 
+                                span.action__text_span B подарок!
+                            button.button.action__button Заказать распространение
                         ul.statistic
                             li.statistic__item 
                                 div.statistic__circle-wrap
-                                    div.statistic__numbers 222
-                                p.statistic__name
+                                    img.statistic__icons(alt="img-name", src="/images/icons/sx2.png")
+                                    div.statistic__numbers 45000m2 
+                                        span.statistic__numbers-span площади
+                                p.statistic__name занятой людьми, которые видят Ваше издание каждый день
+                             li.statistic__item 
+                                div.statistic__circle-wrap
+                                    img.statistic__icons(alt="img-name", src="/images/icons/peoples.png")
+                                    div.statistic__numbers  30 000 
+                                        span.statistic__numbers-span человек
+                                p.statistic__name проходимость наших точек в день
+                             li.statistic__item 
+                                div.statistic__circle-wrap
+                                    img.statistic__icons(alt="img-name", src="/images/icons/book.png")
+                                    div.statistic__numbers  4000
+                                        span.statistic__numbers-span экземпляров
+                                p.statistic__name которые мы можем гарантированно распространить за месяц
+                             li.statistic__item 
+                                div.statistic__circle-wrap
+                                    img.statistic__icons(alt="img-name", src="/images/icons/location.png")
+                                    div.statistic__numbers  75
+                                        span.statistic__numbers-span мест
+                                p.statistic__name в 10 районах Санкт-Петербурга
+                    footer.footer-main.local-footer
+                        p.footer-text распространим  всё до последнего экземпляра!
+                section.distribution
+                    div.container.clearfix
+                        div.distribution-top
+                            h3.title3.distribution__title Наша система распространения
+                            p.distribution__text Мы распространяем бесплатную прессу (газеты, журналы и справочники) по сети собственных специализированных газетно-журнальных стоек в бизнес-центрах, автосалонах и салонах красоты Санкт-Петербурга
+                        div.distribution__slider-block
+                            h4.title4.distribution__slider-title Наши специализированные стойки
+                            p.distribution__slider-text Наши фирменные журнальные стойки позволяют разместить издания любого формата (от А6 до А3). Глубина кармана 15 см позволяет нам работать с изданиями любой полосности, также есть возможность разместить фирменные стикеры издания на фронтальной планке кармана
+                            div.distribution__slider
+                                ul#slider1.distribution__slider1
+                                    li.distribution__slider-item
+                                        img.distribution__slider-img(src="/images/content/book.jpg")
+                                        img.distribution__slider-img(src="/images/content/book.jpg")
+                                    li
+                                        img.distribution__slider-img(src="/images/content/book.jpg")
+                                        img.distribution__slider-img(src="/images/content/book.jpg")
+                        div.distribution_location
+                            h4.title4.distribution__location-title Территория охвата
+                            p.distribution_location-text 75 точек в 10 районах Санкт-Петербурга с общей проходимостью 30 000 человек в день
+                            div.distribution_location-img-wrap
+                                img.distribution_location-img(alt="location", src="/images/content/map.jpg")
+                    footer.local-footer.footer-distribution.clearfix 
+                        div.container
+                            p.footer-text.footer-distribution__text Ознакомьтесь с нашей адресной программой распространения
+                            button.button.distribution-button Ознакомиться
+
+
+
+
+
 
 
                 
@@ -50,5 +104,6 @@ html
         script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
         script.
             window.jQuery || document.write('<script src="/js/_vendor/jquery-1.11.3.min.js"><\/script>');
+        script(src='/scripts/_vendor/bxslider/jquery.bxSlider.min.js')
             
         script(src='/scripts/main.js')

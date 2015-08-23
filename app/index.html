@@ -13,6 +13,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="/styles/css/main.css" media="screen, projection, print">
+    <link rel="stylesheet" type="text/css" href="/scripts/_vendor/bxslider/bx_styles/bx_styles.css">
     <script src="/scripts/_vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
@@ -35,7 +36,7 @@
             </nav>
             <div class="callback">
               <p class="number">+7 (812) 974-27-08</p>
-              <button class="callback__button"></button>
+              <button class="button callback__button">Заказать звонок</button>
             </div>
           </div>
         </header>
@@ -44,24 +45,75 @@
             <ul class="info__list">
               <h2 class="title info__title">Распространение бесплатных изданий и возвратных тиражей в Санкт-Петербурге</h2>
               <li class="info__item">Предоставляем эффективный, экономичный и надежный канал распространения. </li>
-              <li class="info__item">Предоставляем эффективный, экономичный и надежный канал распространения. </li>
-              <li class="info__item">Предоставляем эффективный, экономичный и надежный канал распространения. </li>
-              <li class="info__item">Предоставляем эффективный, экономичный и надежный канал распространения.</li>
+              <li class="info__item">Адресная программа распространения с широким охватом и качественная логистика. </li>
+              <li class="info__item">Возьмем на себя весь объем работ по распространению - от типографии до читателя. </li>
+              <li class="info__item">Включимся в Вашу систему распространения, взаимодействуем с дистрибьюторами и ТК.</li>
             </ul>
             <div class="action">
               <h2 class="title action__title">акция</h2>
-              <p class="action__text">Закажите 2 месяца распространения и получите 3-й месяц в подарок!</p>
-              <button class="button action__button">Заказать</button>
+              <p class="action__text">Закажите 2 месяца распространения и получите 3-й месяц <span class="action__text_span">B подарок!</span></p>
+              <button class="button action__button">Заказать распространение</button>
             </div>
             <ul class="statistic">
               <li class="statistic__item">
-                <div class="statistic__circle-wrap">
-                  <div class="statistic__numbers">222</div>
+                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/sx2.png" class="statistic__icons">
+                  <div class="statistic__numbers">45000m2 <span class="statistic__numbers-span">площади</span></div>
                 </div>
-                <p class="statistic__name"></p>
+                <p class="statistic__name">занятой людьми, которые видят Ваше издание каждый день</p>
+              </li>
+              <li class="statistic__item">
+                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/peoples.png" class="statistic__icons">
+                  <div class="statistic__numbers"> 30 000 <span class="statistic__numbers-span">человек</span></div>
+                </div>
+                <p class="statistic__name">проходимость наших точек в день</p>
+              </li>
+              <li class="statistic__item">
+                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/book.png" class="statistic__icons">
+                  <div class="statistic__numbers"> 4000<span class="statistic__numbers-span">экземпляров</span></div>
+                </div>
+                <p class="statistic__name">которые мы можем гарантированно распространить за месяц</p>
+              </li>
+              <li class="statistic__item">
+                <div class="statistic__circle-wrap"><img alt="img-name" src="/images/icons/location.png" class="statistic__icons">
+                  <div class="statistic__numbers"> 75<span class="statistic__numbers-span">мест</span></div>
+                </div>
+                <p class="statistic__name">в 10 районах Санкт-Петербурга</p>
               </li>
             </ul>
           </div>
+          <footer class="footer-main local-footer">
+            <p class="footer-text">распространим всё до последнего экземпляра!</p>
+          </footer>
+        </section>
+        <section class="distribution">
+          <div class="container clearfix">
+            <div class="distribution-top">
+              <h3 class="title3 distribution__title">Наша система распространения</h3>
+              <p class="distribution__text">Мы распространяем бесплатную прессу (газеты, журналы и справочники) по сети собственных специализированных газетно-журнальных стоек в бизнес-центрах, автосалонах и салонах красоты Санкт-Петербурга</p>
+            </div>
+            <div class="distribution__slider-block">
+              <h4 class="title4 distribution__slider-title">Наши специализированные стойки</h4>
+              <p class="distribution__slider-text">Наши фирменные журнальные стойки позволяют разместить издания любого формата (от А6 до А3). Глубина кармана 15 см позволяет нам работать с изданиями любой полосности, также есть возможность разместить фирменные стикеры издания на фронтальной
+                планке кармана</p>
+              <div class="distribution__slider">
+                <ul id="slider1" class="distribution__slider1">
+                  <li class="distribution__slider-item"><img src="/images/content/book.jpg" class="distribution__slider-img"><img src="/images/content/book.jpg" class="distribution__slider-img"></li>
+                  <li><img src="/images/content/book.jpg" class="distribution__slider-img"><img src="/images/content/book.jpg" class="distribution__slider-img"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="distribution_location">
+              <h4 class="title4 distribution__location-title">Территория охвата</h4>
+              <p class="distribution_location-text">75 точек в 10 районах Санкт-Петербурга с общей проходимостью 30 000 человек в день</p>
+              <div class="distribution_location-img-wrap"><img alt="location" src="/images/content/map.jpg" class="distribution_location-img"></div>
+            </div>
+          </div>
+          <footer class="local-footer footer-distribution clearfix">
+            <div class="container">
+              <p class="footer-text footer-distribution__text">Ознакомьтесь с нашей адресной программой распространения</p>
+              <button class="button distribution-button">Ознакомиться</button>
+            </div>
+          </footer>
         </section>
       </div>
     </div>
@@ -70,6 +122,7 @@
     <script>
       window.jQuery || document.write('<script src="/js/_vendor/jquery-1.11.3.min.js"><\/script>');
     </script>
+    <script src="/scripts/_vendor/bxslider/jquery.bxSlider.min.js"></script>
     <script src="/scripts/main.js"></script>
   </body>
 
