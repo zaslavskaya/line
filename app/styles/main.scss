@@ -730,6 +730,7 @@ position: absolute;
 	margin: o;
 }
 /* 5 ПЯТЫЙ экран  55555 */
+  /*facts about*/
 .facts {
 	background-color: #5e5e5e;
 	color: #fff;
@@ -752,6 +753,130 @@ position: absolute;
 	text-align: center;
 	vertical-align: middle;
 }
+.facts__img {
+	height: 80px;
+}
 .facts_text{
 	margin: 0px;
+}
+/*.contacts*/
+
+.contacts {
+	background-color: #535353;
+	min-height: 200px;
+	padding: 60px 0px 0px 0px;
+
+}
+div.map {
+	float: left;
+	width: 348px;
+	height: 330px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.adress {
+	display: inline-block;
+	float: left;
+	margin-right: 30px;
+
+}
+
+.contacts__list{
+	list-style-type: none;
+	color: #fff;
+	width: 240px;
+}
+.contacts__link {
+	color: #fff;
+}
+.contacts__item_head {
+	margin: 0;
+}
+.contacts__item_text {
+	margin: 0px;
+}
+.contacts__item {
+	padding-bottom: 20px;
+}
+.contacts__office {
+	background: url(/images/icons/loc.png) no-repeat -2px -2px;
+	padding-left: 20px;
+	height: 20px;
+}
+
+.contacts__stock {
+	background: url(/images/icons/loc.png) no-repeat -2px -2px;
+	padding-left: 20px;
+	height: 20px;
+
+}
+
+.contact__mail {
+	background: url(/images/icons/mail.png) no-repeat 0px 2px;
+	padding-left: 20px;
+	height: 20px;
+	margin-bottom: 20px;
+}
+
+.contact__mail:after {
+
+	display: block;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #ccc;
+	margin-top: 20px;
+
+}
+
+
+/* form*/
+.contact__form{
+	width: 200px;
+
+
+}
+.form {
+	float: left;
+	width: 220px;
+	margin: 0 auto;
+	padding: 10px 20px;
+
+	background-color: #363636;
+	border-radius: 5px;
+}
+.form__input {
+	width: 100%;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+}
+.form__name {
+	margin: 0px;
+	color: #fff;
+	font-size: 20px;
+}
+.form__name_description {
+	margin: 0px;
+	color: #ccc;
+	font-size: 17px;
+}
+
+/**/
+.main-page-footer{
+	height: 50px;
+	background-color: #000;
+	padding: 20px 10px;
+}
+
+.footer__copy {
+	color: #fff;
+	float: left;
+}
+.footer__logo{
+	float: right;
 }
